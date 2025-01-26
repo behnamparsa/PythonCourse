@@ -1,7 +1,7 @@
 #!./venv/bin/python
 
-import pandas as pd
-import numpy as np
+import pandas as pd # type: ignore
+import numpy as np # type: ignore
 
 def main():
     df = pd.read_csv("mall_customers.csv", index_col=0)
@@ -12,7 +12,7 @@ def main():
     df = df.drop('Gender', axis=1)
 
     corr = df.corr()
-    np.fill_diagonal(corr.values, 0)
+    np.fill_diagonal(corr.values, 1)
 
     print(corr)
 
