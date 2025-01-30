@@ -24,7 +24,9 @@ def cluster(df, n):
 
 def main():
     df = pd.read_csv('mall_customers.csv')
+    print(df.head())
     df.columns = ['id', 'gender', 'age', 'income', 'spending']
+    print(df.head())
 
     cluster(df, 5)
     plot(df)
