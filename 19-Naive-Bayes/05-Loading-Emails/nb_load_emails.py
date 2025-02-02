@@ -4,7 +4,7 @@ def load():
 
     emails = []
 
-    with open('spam_ham_dataset.csv', 'rt') as file:
+    with open('C:\GitHub\Machine-Learning\Practice ML\spam_ham_dataset.csv', 'rt') as file:
         for line in file:
             m = re.match(r'\d+,(spam|ham),(.*)', line)
 
