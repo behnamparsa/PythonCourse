@@ -1,7 +1,8 @@
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from keras.utils import to_categorical
+#from tensorflow.keras.utils import to_categorical
+import tensorflow as tf
 
 iris = load_iris(as_frame=True)
 X = iris['data']
